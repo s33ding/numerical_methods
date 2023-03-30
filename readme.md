@@ -8,7 +8,7 @@ Numerical methods are mathematical techniques used to solve problems that cannot
 
 ## Projects
 
-- Bisection Method: implementation of the bisection method to find the root of a function.
+- XXX
 
 ## About Me
 
