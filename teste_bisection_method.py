@@ -10,3 +10,4 @@ def f(x):
 
 df=bisection_method(f, a=0, b=1, tol=.13)
 print(df)
+
