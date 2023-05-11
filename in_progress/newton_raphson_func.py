@@ -9,10 +9,11 @@ def newton_raphson_cal(f,x):
     print(f"""
     {round(r,4)} = {round(x,4)} - {round(fx,4)}/{round(d)}
     """)
-    return r
+    return r, d
 
 def nr_stop_criterion(r,tol):
     return r < tol
 
-#def newton_rathson(f,x, tol, mtraix = []):
-#    newton_raphson_cal(f,x)
+def newton_rathson(f,x, tol, matrix = [], ):
+    r,d = newton_raphson_cal(f,x)
+    
