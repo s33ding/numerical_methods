@@ -39,22 +39,18 @@ sum_x= df.x.sum()
 
 sum_y = df.y.sum()
 
-sum_xy =df['x*y'].sum()
+sum_sum_xy =df['x*y'].sum()
 
 sum_xx=df['x**2'].sum()
 
 n = len(df)
 def f_coef_ang():
-    print("({n} * {xy}) - ({x} *{y}))/(({n} *{xx}) - {x**2})")
-    print(f"({n} * {xy}) - ({x} *{y}))/(({n} *{xx}) - {x**2})")
-    print(f"({n} * {xy}) - ({x} *{y}))/(({n *xx}) - {x**2})")
-    print(f"({n * xy}) - ({x *y}))/({(n *xx) - x**2})")
-    return ((n * xy) - (x *y))/((n *xx) - x**2)
+    return ((n * sum_xy) - (sum_x * sum_y))/((n * sum_xx) - sum_x**2)
 
 coef_ang = f_coef_ang()
 
 def f_coef_lin():
-    return (y - coef_ang * x)/n
+    return (sum_y - coef_ang * sum_x)/n
 
 coef_lin = f_coef_lin()
 
