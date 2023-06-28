@@ -1,32 +1,23 @@
-import math as mt 
-import sympy as sp 
+import sympy as sp
 
-def newton_raphson_cal(f,x,fx=None):
+C = 2
+I = 0.83
+Q0 = 7 * C
+R = 3
 
-    if fx is None:
-        fx = f(x)
+expr = lambda x: (14 / R * C) * sp.E ** (-x / (R * C))
+expr_prime = sp.diff(expr(sp.Symbol('x')), sp.Symbol('x'))
 
-    x = symbols('x')
-    df_dx = f(x).diff(x)
-    res = x - (fx/df_dx)
-    rw = {"x":x,"fx":fx,"df_dx":df_dx,"res":res}
-    print(rw)
-    print(f"""
-    {round(r,4)} = {round(x,4)} - {round(fx,4)}/{round(d)}
-    """)
-    return rw
+x0 = 0
+epsilon = 1e-6  # Desired level of accuracy
 
-def nr_stop_criterion(res,tol):
-    return res <= tol
+while True:
+    f_val = expr(x0)
+    if abs(f_val) < epsilon:
+        break
 
-def newton_rathson(f,x, tol, matrix = [], fx=None):
-    rw = newton_raphson_cal(f,x)
-    res = rw.get("res")
-    stop = nr_stop_criterion(res,tol)
-    matrix.append(rw) 
-    if stop == True:
-        return matrix
-    else:
-        x = rw.get("x")
-        fx = rw.get("fx")
-        return newton_rathson( f, x, tol, matrix, fx)
+    f_prime_val = expr_prime.subs(sp.Symbol('x'), x0)
+    x0 = x0 - f_val / f_prime_val
+
+root = x0
+print("The root of the equation is:", root)

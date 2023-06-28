@@ -4,8 +4,10 @@ from numpy import log as ln
 
 #"transform the exp. func. to make it linear and use the linear regression"
 
-lst_x = [-1,-.7, -.4,-.1,.2,.5, .8, 1 ]
-lst_y = [36.547,17.264, 8.155,3.852,1.82, .86, .406,.246]
+#lst_x = [-1,-.7, -.4,-.1,.2,.5, .8, 1 ]
+lst_x = [int(x) for x in "0 1 2 3 4 5".split()]
+#lst_y = [36.547,17.264, 8.155,3.852,1.82, .86, .406,.246]
+lst_y = [int(x) for x in "8389 6540 5000 3200 2500 2000".split()]
 
 data = {'x':lst_x, 'y':lst_y}
 
@@ -35,4 +37,7 @@ alfa_1 = mt.e ** a1
 alfa_2 = -1 * a2
 
 def f(x):
+    print(alfa_1*(mt.e**alfa_2))
     return alfa_1*(mt.e**alfa_2)
+
+f(180)

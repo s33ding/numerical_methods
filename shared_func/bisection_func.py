@@ -1,6 +1,6 @@
 import math as mt
 import numpy as np
-from  bolzano_func import bolzano 
+from  shared_func.bolzano_func import bolzano 
 import pandas as pd
 
 
