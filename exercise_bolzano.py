@@ -1,5 +1,5 @@
 import math
-from bolzano_func import bolzano
+from shared_func.bolzano_func import bolzano
 
 def func_a(x):
     return x**2 - 5*math.sin(x)

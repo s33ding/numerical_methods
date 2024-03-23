@@ -1,0 +1,272 @@
+<html>
+<head>
+<style>
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-family: "Georgia", serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-family: "Georgia", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+</style>
+</head>
+<body>
+<h1>AP5</h1>
+<h4>EX:1</h4><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>x</th>
+      <th>f(x)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>172</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>D0</th>
+      <th>D1</th>
+      <th>D2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>49.0</td>
+      <td>11.2</td>
+      <td>0.22</td>
+    </tr>
+  </tbody>
+</table><p>
+The polynomial is:
+(49.0) + (x - 5) * (11.2) + (x - 5) * (x - 10) * (0.2200000000000001) + 0</p><p>
+The simplified polynomial for x=12 is:
+0.2200000000000001*x**2 + 7.899999999999998*x + 4.000000000000005</p><p>f(12) = 130.4800000000000</p><h4>EX:2</h4><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>x</th>
+      <th>f(x)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+      <td>-3</td>
+    </tr>
+    <tr>
+      <td>-2</td>
+      <td>-4</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>D0</th>
+      <th>D1</th>
+      <th>D2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>1.5</td>
+      <td>0.166667</td>
+    </tr>
+  </tbody>
+</table><p>
+The polynomial is:
+0 + (x - 1) * (1.5) + (x - 1) * (x + 1) * (0.16666666666666666) + 0</p><p>
+The simplified polynomial for x=0 is:
+0.16666666666666666*x**2 + 1.5*x - 1.6666666666666667</p><p>f(0) = -1.6666666666666667</p><h4>EX:3</h4><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>x</th>
+      <th>f(x)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>D0</th>
+      <th>D1</th>
+      <th>D2</th>
+      <th>D3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>1.0</td>
+      <td>-0.666667</td>
+      <td>0.333333</td>
+    </tr>
+  </tbody>
+</table><p>
+The polynomial is:
+0 + (x + 2) * (1.0) + (x + 2) * (x + 1) * (-0.6666666666666666) + (x + 2) * (x + 1) * (x - 1) * (0.3333333333333333) + 0</p><p>
+The simplified polynomial for x=0.5 is:
+0.3333333333333333*x**3 - 1.333333333333333*x + 1.942890293094024e-16</p><p>f(0.5) = -0.6249999999999997</p><h4>EX:4</h4><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>x</th>
+      <th>f(x)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2310</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>3090</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>3940</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>8000</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>D0</th>
+      <th>D1</th>
+      <th>D2</th>
+      <th>D3</th>
+      <th>D4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>800.0</td>
+      <td>755.0</td>
+      <td>-91.25</td>
+      <td>16.666667</td>
+      <td>-0.927542</td>
+    </tr>
+  </tbody>
+</table><p>D3 = 16.666666666666668; D4 = -0.9275422719695166</p><h4>EX:5</h4><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>x</th>
+      <th>f(x)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.5</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>2.0</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>3.5</td>
+      <td>7.0</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>D0</th>
+      <th>D1</th>
+      <th>D2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2.5</td>
+      <td>1.2</td>
+      <td>0.7</td>
+    </tr>
+  </tbody>
+</table><p>
+The polynomial is:
+(2.5) + (x - 1.5) * (1.2000000000000002) + (x - 1.5) * (x - 2.0) * (0.7) + 0</p><p>
+The simplified polynomial for x=2.5 is:
+0.69999999999999996*x**2 - 1.2499999999999995*x + 2.7999999999999993</p><p>f(2.5) = 4.0500000000000002</p>

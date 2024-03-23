@@ -1,5 +1,0 @@
-# Dados da tabela
-X = np.array([5, 10, 15, 20, 25, 30, 35])  # Força axial em Toneladas Força (TF)
-Y = np.array([7, 8.4, 9.6, 10.5, 11.9, 11.3, 12])  # Alongamento em mm
-
-

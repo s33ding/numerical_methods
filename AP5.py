@@ -63,7 +63,8 @@ with open('media/style.css', 'r') as f:
     css = f.read()
 
 # Write HTML file
-with open('media/ap5-ex1.html', 'w') as f:
+title = "AP5.html"
+with open(f'media/{title}', 'w') as f:
     f.write('<html>\n<head>\n')
     f.write(f'<style>\n{css}\n</style>\n')
     title = "AP5"
